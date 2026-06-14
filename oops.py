@@ -49,3 +49,15 @@ print(prashant.admission_no)
 print(prashant.get_cgpa())
 prashant.set_cgpa(9.0)
 print(prashant.get_cgpa())
+
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  # private
+
+    def get_balance(self):       # getter
+        return self.__balance
+
+    def deposit(self, amount):   # setter
+        if amount > 0:
+            self.__balance += amount
+
